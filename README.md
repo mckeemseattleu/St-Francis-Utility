@@ -1,7 +1,7 @@
 # St-Francis-Utility
 Utility programs for St-Francis
 
-# St. Francis Utility Data Migration
+# 1. StFrancis Utility: Data Migration
 
 This repository contains a Python script for migrating data from a Firestore database to a PostgreSQL database. The script handles the migration of residents, visits, and settings data collections. This README provides step-by-step instructions for setting up the environment, running the script, and troubleshooting common issues.
 
@@ -53,5 +53,9 @@ Update the PostgreSQL connection details in the script:
 ## Run the Migration Script:
 To start the data migration, run the script using Python:
 
-#### python migration_script.py
-#### The script will migrate data from Firestore to PostgreSQL, including the residents, visits, and settings collections.
+python migration_script.py
+The script will migrate data from Firestore to PostgreSQL, including the residents, visits, and settings collections.
+
+# 2. St Francis Utility: Handling duplicate data
+
+To run the finding_duplicates.py and removing_duplicates.py scripts on your local system, follow the same setup steps as outlined in the utility above, excluding any steps related to PostgreSQL. This utility does not involve PostgreSQL; instead, it directly connects your Python application to the Firebase database to perform the tasks of identifying and removing duplicate records.
